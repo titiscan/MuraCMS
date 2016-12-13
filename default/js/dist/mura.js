@@ -7435,7 +7435,7 @@ return /******/ (function(modules) { // webpackBootstrap
          * @return {boolean}
          */
         exists:function(){
-                return this.has('isnew') && !this.get('isnew');
+                return this.hasOwnProperty('isnew') && !this.get('isnew');
         },
 
 
@@ -9469,7 +9469,7 @@ return /******/ (function(modules) { // webpackBootstrap
 						data.append('saveform',true);
 						data.append('formid',rawdata.objectid);
 
-						if(!data.has('siteid')){
+						if(!data.hasOwnProperty('siteid')){
 							data.append('siteid',rawdata.siteid || Mura.siteid);
 						}
 					}
